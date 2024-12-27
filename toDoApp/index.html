@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Task List</title>
+</head>
+
+<body class="bg-purple-200 flex items-center justify-center min-h-screen">
+    <div class="bg-purple-200 p-8 w-full max-w-md border-2 border-purple-900 ">
+        <h1 class="text-2xl text-purple-900 font-sans font-black mb-4 text-center">TO DO OR NOT TO DO</h1>
+        <!-- Form for adding new tasks -->
+        <form id="taskForm" class="flex mb-4">
+            <!-- Input field for task description -->
+            <input type="text" class="task-input border border-purple-900 p-2 w-full" id="taskInput"
+                placeholder="Enter a task" autocomplete="off">
+            <!-- Button to add a new task -->
+            <button type="submit" class="add-button bg-purple-800 hover:bg-purple-900 text-white p-2">ADD</button>
+        </form>
+        <!-- Task list dynamically filled -->
+        <ul id="taskList" class="list-disc pl-5" aria-live="polite"></ul>
+        <small class="text-purple-600 text-center block"><br></small>
+    </div>
+
+    <!-- JavaScript logic -->
+    <script src="script.js"></script>
+</body>
+
+</html>
